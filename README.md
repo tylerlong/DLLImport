@@ -1,3 +1,8 @@
 # DllImport
 
-Import unmanaged dlls
+Import unmanaged DLLs
+
+
+## DLLs list
+
+- User32
