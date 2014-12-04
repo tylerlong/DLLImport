@@ -10,9 +10,11 @@ Import unmanaged DLLs: User32.dll
 
 ## Usage Example
 
-    using DllImport;
+```C#
+using DllImport;
 
-    User32.ShowWindow(handle, User32.SW_RESTORE);
+User32.ShowWindow(handle, User32.SW_RESTORE);
+```
 
 
 ## ToDo list
