@@ -1,6 +1,6 @@
 # DllImport
 
-Import unmanaged DLLs
+Import unmanaged DLLs: User32.dll
 
 
 ## DLLs list
@@ -8,10 +8,11 @@ Import unmanaged DLLs
 - User32
 
 
-## How to
+## Usage Example
 
-1. Referece this project in your project
-2. Call native methods like `DllImport.[DLL name].[method name]([method parameters])`, example: `DllImport.User32.ShowWindow(handle, DllImport.User32.SW_RESTORE);`
+    using DllImport;
+
+    User32.ShowWindow(handle, User32.SW_RESTORE);
 
 
 ## ToDo list
