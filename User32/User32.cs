@@ -40,12 +40,7 @@ namespace DLLImport
         [DllImport("User32.dll")]
         public static extern bool ShowWindow(IntPtr handle, int nCmdShow);
 
-
-
-
-        //[DllImport("User32.dll")]
-        //public static extern bool EnumWindows(Func<IntPtr, IntPtr, bool> lpEnumFunc, IntPtr lParam);
-
+        
 
         public delegate bool WndEnumProc(IntPtr hwnd, IntPtr lParam);
         [DllImport("User32.dll")]
