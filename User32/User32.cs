@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace DllImport
+namespace DLLImport
 {
     public static class User32
     {

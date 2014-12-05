@@ -1,4 +1,4 @@
-# DllImport
+# DLLImport
 
 Import unmanaged DLLs: User32.dll
 
@@ -11,7 +11,7 @@ Import unmanaged DLLs: User32.dll
 ## Usage Example
 
 ```C#
-using DllImport;
+using DLLImport;
 
 User32.ShowWindow(handle, User32.SW_RESTORE);
 ```
