@@ -22,7 +22,7 @@ namespace DLLImport
 
 
         [DllImport("User32.dll")]
-        public static extern IntPtr SetWindowPos(IntPtr hWnd, int handleInsertAfter, int x, int Y, int width, int height, int uFlags);
+        public static extern IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int x, int Y, int cx, int cy, int uFlags);
 
 
         [DllImport("User32.dll")]
