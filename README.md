@@ -20,4 +20,4 @@ User32.ShowWindow(handle, User32.SW_RESTORE);
 ## ToDo list
 
 1. Publish to NuGet
-1. Use Enum to arrange const integers. (reference to source code of TaskbarSorter.2)
+2. Replace constants with enums, reference: http://stackoverflow.com/questions/11811106/c-sharp-setwineventhook-fails-returns-0

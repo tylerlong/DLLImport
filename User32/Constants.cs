@@ -33,5 +33,15 @@ namespace DLLImport
         public const int SW_HIDE = 0;
         public const int SW_SHOW = 5;
         public const int SW_RESTORE = 9;
+
+
+        // Win Event
+        public enum SetWinEventHookFlags
+        {
+            WINEVENT_INCONTEXT = 4,
+            WINEVENT_OUTOFCONTEXT = 0,
+            WINEVENT_SKIPOWNPROCESS = 2,
+            WINEVENT_SKIPOWNTHREAD = 1
+        }
     }
 }

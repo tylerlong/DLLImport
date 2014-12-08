@@ -35,5 +35,10 @@ namespace DLLImport
 
         [DllImport("User32.dll")]
         public static extern bool IsWindowVisible(IntPtr hWnd);
+
+
+        [DllImport("User32.dll")]
+        public static extern IntPtr SetWinEventHook(int eventMin, int eventMax, IntPtr hmodWinEventProc,
+            WinEventProc lpfnWinEventProc, int idProcess, int idThread, SetWinEventHookFlags dwflags);
     }
 }
