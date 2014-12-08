@@ -13,11 +13,10 @@ Import unmanaged DLLs: User32.dll
 ```C#
 using DLLImport;
 
-User32.ShowWindow(handle, User32.SW_RESTORE);
+User32.ShowWindow(handle, User32.SW.RESTORE);
 ```
 
 
 ## ToDo list
 
 1. Publish to NuGet
-2. Replace constants with enums, reference: http://stackoverflow.com/questions/11811106/c-sharp-setwineventhook-fails-returns-0
