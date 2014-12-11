@@ -7,5 +7,12 @@ namespace DLLImport
         {
             NCRENDERING_POLICY = 2,
         }
+
+
+        // DWM Non-Client Rendering Policy
+        public enum DWMNCRP 
+        {
+            DISABLED = 2,
+        }
     }
 }

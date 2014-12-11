@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace Dwmapi
+namespace DLLImport
 {
     public static partial class Dwmapi
     {
