@@ -44,5 +44,9 @@ namespace DLLImport
 
         [DllImport("User32.dll")]
         public static extern bool UnhookWinEvent(IntPtr hWinEventHook);
+
+
+        [DllImport("User32.dll")]
+        public static extern IntPtr DefWindowProc(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
     }
 }
