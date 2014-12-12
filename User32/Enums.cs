@@ -51,9 +51,13 @@ namespace DLLImport
         // SetWindowPos
         public enum SWP
         {
+            DEFERERASE= 0x2000,
+            FRAMECHANGED = 0x0020,
             NOACTIVATE = 0x0010,
             NOMOVE = 0x0002,
+            NOREDRAW = 0x0008,
             NOSIZE = 0x0001,
+            NOSENDCHANGING = 0x0400,
             NOZORDER = 0x0004,
         }
 
