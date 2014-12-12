@@ -41,6 +41,8 @@ namespace DLLImport
         public enum SW
         {
             HIDE = 0,
+            MAXIMIZE = 3,
+            MINIMIZE = 6,
             RESTORE = 9,
             SHOW = 5,
         }
@@ -71,10 +73,12 @@ namespace DLLImport
         {
             CAPTION = 0x00C00000,
             DLGFRAME = 0x00400000,
+            MAXIMIZE = 0x01000000,
             MAXIMIZEBOX = 0x00010000,
             MINIMIZEBOX = 0x00020000,
             SIZEBOX = 0x00040000,
             SYSMENU = 0x00080000,
+            THICKFRAME = 0x00040000,
         }
 
 

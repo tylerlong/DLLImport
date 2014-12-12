@@ -48,5 +48,13 @@ namespace DLLImport
 
         [DllImport("User32.dll")]
         public static extern IntPtr DefWindowProc(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
+
+
+        [DllImport("User32.dll")]
+        public static extern IntPtr SetParent(IntPtr hWndChind, IntPtr hWndNewParent);
+
+
+        [DllImport("User32.dll")]
+        public static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
     }
 }
