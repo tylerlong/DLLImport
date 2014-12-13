@@ -6,19 +6,19 @@ namespace DLLImport
     public static partial class User32
     {
         [DllImport("User32.dll")]
-        public static extern IntPtr GetWindowLong(IntPtr hWnd, GWL nIndex);
+        public static extern int GetWindowLong(IntPtr hWnd, GWL nIndex);
 
 
         [DllImport("User32.dll")]
-        public static extern IntPtr GetWindowLongPtr(IntPtr hWnd, GWL nIndex);
+        public static extern int GetWindowLongPtr(IntPtr hWnd, GWL nIndex);
 
 
         [DllImport("User32.dll")]
-        public static extern long SetWindowLong(IntPtr hWnd, GWL nIndex, int dwNewLong);
+        public static extern int SetWindowLong(IntPtr hWnd, GWL nIndex, int dwNewLong);
 
 
         [DllImport("User32.dll")]
-        public static extern long SetWindowLongPtr(IntPtr hWnd, GWL nIndex, int dwNewLong);
+        public static extern int SetWindowLongPtr(IntPtr hWnd, GWL nIndex, int dwNewLong);
 
 
         [DllImport("User32.dll")]
