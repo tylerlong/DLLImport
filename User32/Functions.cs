@@ -10,7 +10,7 @@ namespace DLLImport
 
 
         [DllImport("User32.dll")]
-        public static extern int GetWindowLongPtr(IntPtr hWnd, GWL nIndex);
+        public static extern long GetWindowLongPtr(IntPtr hWnd, GWL nIndex);
 
 
         [DllImport("User32.dll")]
@@ -18,7 +18,7 @@ namespace DLLImport
 
 
         [DllImport("User32.dll")]
-        public static extern int SetWindowLongPtr(IntPtr hWnd, GWL nIndex, int dwNewLong);
+        public static extern long SetWindowLongPtr(IntPtr hWnd, GWL nIndex, long dwNewLong);
 
 
         [DllImport("User32.dll")]

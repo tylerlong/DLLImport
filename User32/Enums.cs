@@ -1,3 +1,5 @@
+using System;
+
 namespace DLLImport
 {
     public static partial class User32
@@ -51,7 +53,7 @@ namespace DLLImport
         // SetWindowPos
         public enum SWP
         {
-            DEFERERASE= 0x2000,
+            DEFERERASE = 0x2000,
             FRAMECHANGED = 0x0020,
             NOACTIVATE = 0x0010,
             NOMOVE = 0x0002,
@@ -73,7 +75,8 @@ namespace DLLImport
 
 
         // Window Style
-        public enum WS
+        [Flags]
+        public enum WS : long
         {
             CAPTION = 0x00C00000,
             DLGFRAME = 0x00400000,
@@ -87,7 +90,8 @@ namespace DLLImport
 
 
         // Window Style, Extended
-        public enum WS_EX
+        [Flags]
+        public enum WS_EX : long
         {
             APPWINDOW = 0x00040000,
             TOOLWINDOW = 0x00000080,
