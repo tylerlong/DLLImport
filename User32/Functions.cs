@@ -51,6 +51,10 @@ namespace DLLImport
 
 
         [DllImport("User32.dll")]
+        public static extern IntPtr CallWindowProc(IntPtr lpPrevWndFunc, IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
+
+
+        [DllImport("User32.dll")]
         public static extern IntPtr SetParent(IntPtr hWndChind, IntPtr hWndNewParent);
 
 

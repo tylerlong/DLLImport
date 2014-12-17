@@ -22,6 +22,7 @@ namespace DLLImport
             EXSTYLE = -20,
             HWNDPARENT = -8,
             STYLE = -16,
+            WNDPROC = -4,
         }
 
 
@@ -71,6 +72,16 @@ namespace DLLImport
             OUTOFCONTEXT = 0,
             SKIPOWNPROCESS = 2,
             SKIPOWNTHREAD = 1,
+        }
+
+
+        // Window Message
+        public enum WM
+        {
+            GETMINMAXINFO = 0x0024,
+            MOVING = 0x0216,
+            SIZE = 0x0005,
+            SIZING = 0x0214,
         }
 
 
