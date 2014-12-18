@@ -60,5 +60,9 @@ namespace DLLImport
 
         [DllImport("User32.dll")]
         public static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
+
+
+        [DllImport("User32.dll")]
+        public static extern int GetWindowThreadProcessId(IntPtr hWnd, out int lpdwProcessId);
     }
 }

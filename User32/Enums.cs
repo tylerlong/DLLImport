@@ -9,8 +9,11 @@ namespace DLLImport
         {
             MAX = 0x7FFFFFFF,
             MIN = 0x00000001,
+            OBJECT_DESTROY = 0x8001,
             SYSTEM_DRAGDROPEND = 0x000F,
             SYSTEM_DRAGDROPSTART = 0x000E,
+            SYSTEM_MINIMIZEEND = 0x0017,
+            SYSTEM_MINIMIZESTART = 0x0016,
             SYSTEM_MOVESIZEEND = 0x000B,
             SYSTEM_MOVESIZESTART = 0x000A,
         }
@@ -30,6 +33,14 @@ namespace DLLImport
         public enum HWND
         {
             NOTOPMOST = -2,
+        }
+
+
+        // Object Identifier
+        public enum OBJID 
+        {
+            SELF = 0x00000000,
+            WINDOW = 0x00000000,
         }
 
 
