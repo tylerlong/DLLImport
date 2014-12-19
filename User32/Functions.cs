@@ -1,5 +1,6 @@
 using System;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace DLLImport
 {
@@ -64,5 +65,17 @@ namespace DLLImport
 
         [DllImport("User32.dll")]
         public static extern int GetWindowThreadProcessId(IntPtr hWnd, out int lpdwProcessId);
+
+
+        [DllImport("User32.dll")]
+        public static extern int GetWindowTextLength(IntPtr hWnd);
+
+
+        [DllImport("User32.dll")]
+        public static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
+
+
+        [DllImport("User32.dll")]
+        public static extern int GetClassName(IntPtr hWnd, StringBuilder lpClassName, int nMaxCount);
     }
 }

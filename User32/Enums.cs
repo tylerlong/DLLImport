@@ -12,6 +12,7 @@ namespace DLLImport
             OBJECT_DESTROY = 0x8001,
             SYSTEM_DRAGDROPEND = 0x000F,
             SYSTEM_DRAGDROPSTART = 0x000E,
+            SYSTEM_FOREGROUND = 0x0003,
             SYSTEM_MINIMIZEEND = 0x0017,
             SYSTEM_MINIMIZESTART = 0x0016,
             SYSTEM_MOVESIZEEND = 0x000B,
