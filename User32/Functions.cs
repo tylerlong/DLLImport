@@ -27,6 +27,10 @@ namespace DLLImport
 
 
         [DllImport("User32.dll")]
+        public static extern IntPtr SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int x, int Y, int cx, int cy, SWP uFlags);
+
+
+        [DllImport("User32.dll")]
         public static extern bool ShowWindow(IntPtr hWnd, SW nCmdShow);
 
 
@@ -77,5 +81,25 @@ namespace DLLImport
 
         [DllImport("User32.dll")]
         public static extern int GetClassName(IntPtr hWnd, StringBuilder lpClassName, int nMaxCount);
+
+
+        [DllImport("User32.dll")]
+        public static extern IntPtr WindowFromPoint(POINT point);
+
+
+        [DllImport("User32.dll")]
+        public static extern IntPtr PostMessage(IntPtr hWnd, WM Msg, int wParam, int lParam);
+
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr SetWindowsHookEx(WH idHook, Delegate lpfn, IntPtr hMod, int dwThreadId);
+
+
+        [DllImport("user32.dll")]
+        public static extern bool UnhookWindowsHookEx(IntPtr hhk);
+
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode, IntPtr wParam, IntPtr lParam);
     }
 }

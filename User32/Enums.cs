@@ -10,6 +10,8 @@ namespace DLLImport
             MAX = 0x7FFFFFFF,
             MIN = 0x00000001,
             OBJECT_DESTROY = 0x8001,
+            OBJECT_FOCUS = 0x8005,
+            OBJECT_HIDE = 0x8003,
             SYSTEM_DRAGDROPEND = 0x000F,
             SYSTEM_DRAGDROPSTART = 0x000E,
             SYSTEM_FOREGROUND = 0x0003,
@@ -33,7 +35,10 @@ namespace DLLImport
         // HWND
         public enum HWND
         {
+            BOTTOM = 1,
             NOTOPMOST = -2,
+            TOP = 0,
+            TOPMOST = -1,
         }
 
 
@@ -74,6 +79,15 @@ namespace DLLImport
             NOSIZE = 0x0001,
             NOSENDCHANGING = 0x0400,
             NOZORDER = 0x0004,
+            SHOWWINDOW = 0x0040,
+        }
+
+
+        // Windows Hook
+        public enum WH
+        {
+            KEYBOARD = 2,
+            KEYBOARD_LL = 13,
         }
 
 
@@ -90,6 +104,7 @@ namespace DLLImport
         // Window Message
         public enum WM
         {
+            CLOSE = 0x0010,
             GETMINMAXINFO = 0x0024,
             MOVING = 0x0216,
             SIZE = 0x0005,
