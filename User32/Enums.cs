@@ -22,6 +22,14 @@ namespace DLLImport
         }
 
 
+        // Get Window
+        public enum GW
+        { 
+            HWNDNEXT = 2,
+            HWNDPREV = 3,
+        }
+
+
         // GetWindowLong
         public enum GWL
         {
@@ -106,6 +114,8 @@ namespace DLLImport
         {
             CLOSE = 0x0010,
             GETMINMAXINFO = 0x0024,
+            KEYDOWN = 0x0100,
+            KEYUP = 0x0101,
             MOVING = 0x0216,
             SIZE = 0x0005,
             SIZING = 0x0214,
