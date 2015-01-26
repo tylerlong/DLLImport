@@ -105,5 +105,13 @@ namespace DLLImport
 
         [DllImport("user32.dll")]
         public static extern IntPtr GetWindow(IntPtr hWnd, GW wCmd);
+
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
+
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr SetFocus(IntPtr hWnd);
     }
 }

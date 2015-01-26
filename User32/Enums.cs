@@ -10,6 +10,8 @@ namespace DLLImport
             MAX = 0x7FFFFFFF,
             MIN = 0x00000001,
             OBJECT_DESTROY = 0x8001,
+            OBJECT_DRAGDROPPED = 0x8026,
+            OBJECT_DRAGSTART = 0x8021,
             OBJECT_FOCUS = 0x8005,
             OBJECT_HIDE = 0x8003,
             SYSTEM_DRAGDROPEND = 0x000F,
@@ -117,6 +119,7 @@ namespace DLLImport
             KEYDOWN = 0x0100,
             KEYUP = 0x0101,
             MOVING = 0x0216,
+            PAINT = 0x000F,
             SIZE = 0x0005,
             SIZING = 0x0214,
         }
