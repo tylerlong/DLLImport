@@ -5,7 +5,7 @@ namespace DLLImport
 {
     public static partial class Shell32
     {
-        [DllImport("Shell32.dll")]
-        public static extern IntPtr SHGetFileInfo(string pszPath, uint dwFileAttributes, ref SHFILEINFO psfi, uint cbFileInfo, uint uFlags);
+        [DllImport("shell32.dll")]
+        public static extern IntPtr SHGetFileInfo(string pszPath, int dwFileAttributes, ref SHFILEINFO psfi, int cbFileInfo, SHGFI uFlags);
     }
 }
