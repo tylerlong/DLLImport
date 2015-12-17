@@ -1,11 +1,11 @@
 # DLLImport
 
-Import unmanaged DLLs: User32.dll
-
 
 ## DLLs list
 
 1. User32
+1. Shell32
+1. Dwmapi
 
 
 ## Usage Example
