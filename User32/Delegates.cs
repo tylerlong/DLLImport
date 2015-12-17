@@ -13,5 +13,7 @@ namespace DLLImport
         public delegate IntPtr KeyboardProc(int code, IntPtr wParam, IntPtr lParam);
 
         public delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
+
+        public delegate IntPtr CallWndProc(int nCode, IntPtr wParam, IntPtr lParam);
     }
 }

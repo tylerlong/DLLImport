@@ -96,6 +96,7 @@ namespace DLLImport
         // Windows Hook
         public enum WH
         {
+            CALLWNDPROC = 4,
             KEYBOARD = 2,
             KEYBOARD_LL = 13,
         }
