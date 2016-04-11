@@ -108,6 +108,18 @@ namespace DLLImport
 
 
         [DllImport("user32.dll")]
+        public static extern IntPtr GetActiveWindow();
+
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr GetDesktopWindow();
+
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr GetForegroundWindow();
+
+
+        [DllImport("user32.dll")]
         public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
 

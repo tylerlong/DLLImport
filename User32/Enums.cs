@@ -26,7 +26,9 @@ namespace DLLImport
 
         // Get Window
         public enum GW
-        { 
+        {
+            HWNDFIRST = 0,
+            HWNDLAST = 1,
             HWNDNEXT = 2,
             HWNDPREV = 3,
         }
@@ -99,6 +101,7 @@ namespace DLLImport
             CALLWNDPROC = 4,
             KEYBOARD = 2,
             KEYBOARD_LL = 13,
+            MOUSE_LL = 14,
         }
 
 
